@@ -1,0 +1,9 @@
+{
+  "locale": "test locale setup",
+  "create": "Create",
+  "accessories": "Accessories",
+  "price": "Price",
+  "delete": "Delete",
+  "edit": "Edit",
+  "assetListingTableHeader": "Asset listing table for test CRUD"
+}

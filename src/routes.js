@@ -6,6 +6,11 @@ import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
 import DataTables from "views/admin/tables";
 import RTLDefault from "views/rtl/default";
+import Table from 'views/learning/table'
+import Implementation from 'views/implementation/index'
+import RandomGenerator from 'views/randomGenerator/index'
+import MapBox from 'views/mapBox/index'
+import Chat from "views/chat/index";
 
 // Auth Imports
 import SignIn from "views/auth/SignIn";
@@ -17,6 +22,9 @@ import {
   MdBarChart,
   MdPerson,
   MdLock,
+  MdAutorenew,
+  MdOutlineMap,
+  MdOutlineChat
 } from "react-icons/md";
 
 const routes = [
@@ -62,6 +70,41 @@ const routes = [
     path: "rtl",
     icon: <MdHome className="h-6 w-6" />,
     component: <RTLDefault />,
+  },
+  {
+    name: "Learning",
+    layout: "/admin",
+    path: "learning",
+    icon: <MdHome className="h-6 w-6" />,
+    component: <Table />,
+  },
+  {
+    name: "Table",
+    layout: "/admin",
+    path: "implementation",
+    icon: <MdHome className="h-6 w-6" />,
+    component: <Implementation />,
+  },
+  {
+    name: "Random",
+    layout: "/admin",
+    path: "random",
+    icon: <MdAutorenew className="h-6 w-6" />,
+    component: <RandomGenerator />,
+  },
+  {
+    name: "Map",
+    layout: "/admin",
+    path: "map",
+    icon: <MdOutlineMap className="h-6 w-6" />,
+    component: <MapBox />,
+  },
+  {
+    name: "Chat",
+    layout: "/admin",
+    path: "chat",
+    icon: <MdOutlineChat className="h-6 w-6" />,
+    component: <Chat />,
   },
 ];
 export default routes;
