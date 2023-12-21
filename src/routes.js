@@ -11,6 +11,7 @@ import Implementation from 'views/implementation/index'
 import RandomGenerator from 'views/randomGenerator/index'
 import MapBox from 'views/mapBox/index'
 import Chat from "views/chat/index";
+import Scroll from 'views/scroll/index'
 
 // Auth Imports
 import SignIn from "views/auth/SignIn";
@@ -24,7 +25,8 @@ import {
   MdLock,
   MdAutorenew,
   MdOutlineMap,
-  MdOutlineChat
+  MdOutlineChat,
+  MdReadMore
 } from "react-icons/md";
 
 const routes = [
@@ -105,6 +107,13 @@ const routes = [
     path: "chat",
     icon: <MdOutlineChat className="h-6 w-6" />,
     component: <Chat />,
+  },
+  {
+    name: "Scroll",
+    layout: "/admin",
+    path: "scroll",
+    icon: <MdReadMore className="h-6 w-6" />,
+    component: <Scroll />,
   },
 ];
 export default routes;

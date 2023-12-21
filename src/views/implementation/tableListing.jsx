@@ -78,3 +78,8 @@ export default function BasicTable(props) {
     </div>
   );
 }
+
+
+BasicTable.defaultProps = {
+  list: []
+}
